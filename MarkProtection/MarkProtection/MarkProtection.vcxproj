@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{636130FA-E850-41C4-B9A9-3CA9D54187B8}</ProjectGuid>
+    <RootNamespace>MarkProtection</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\UltimateGrid\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MarkProtection.h" />
+    <ClInclude Include="MarkProtectionDoc.h" />
+    <ClInclude Include="MarkProtectionView.h" />
+    <ClInclude Include="Mycug.h" />
+    <ClInclude Include="OptionCSV.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StockSelect.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UltimateGrid\Include\UG64Bit.h" />
+    <ClInclude Include="UltimateGrid\Include\UGCBType.h" />
+    <ClInclude Include="UltimateGrid\Include\UGCell.h" />
+    <ClInclude Include="UltimateGrid\Include\ugceltyp.h" />
+    <ClInclude Include="UltimateGrid\Include\UGCnrBtn.h" />
+    <ClInclude Include="UltimateGrid\Include\UGCTarrw.h" />
+    <ClInclude Include="UltimateGrid\Include\UGCTbutn.h" />
+    <ClInclude Include="UltimateGrid\Include\UGCtrl.h" />
+    <ClInclude Include="UltimateGrid\Include\ugdefine.h" />
+    <ClInclude Include="UltimateGrid\Include\UGDLType.h" />
+    <ClInclude Include="UltimateGrid\Include\UGDrgDrp.h" />
+    <ClInclude Include="UltimateGrid\Include\UGDrwHnt.h" />
+    <ClInclude Include="UltimateGrid\Include\UGDtaSrc.h" />
+    <ClInclude Include="UltimateGrid\Include\UGEdit.h" />
+    <ClInclude Include="UltimateGrid\Include\UGEditBase.h" />
+    <ClInclude Include="UltimateGrid\Include\ugformat.h" />
+    <ClInclude Include="UltimateGrid\Include\uggdinfo.h" />
+    <ClInclude Include="UltimateGrid\Include\UGGrid.h" />
+    <ClInclude Include="UltimateGrid\Include\UGHint.h" />
+    <ClInclude Include="UltimateGrid\Include\ughscrol.h" />
+    <ClInclude Include="UltimateGrid\Include\uglstbox.h" />
+    <ClInclude Include="UltimateGrid\Include\UGMEdit.h" />
+    <ClInclude Include="UltimateGrid\Include\UGMemMan.h" />
+    <ClInclude Include="UltimateGrid\Include\UGMultiS.h" />
+    <ClInclude Include="UltimateGrid\Include\ugprint.h" />
+    <ClInclude Include="UltimateGrid\Include\ugptrlst.h" />
+    <ClInclude Include="UltimateGrid\Include\ugsidehd.h" />
+    <ClInclude Include="UltimateGrid\Include\UGStrOp.h" />
+    <ClInclude Include="UltimateGrid\Include\ugstruct.h" />
+    <ClInclude Include="UltimateGrid\Include\ugtab.h" />
+    <ClInclude Include="UltimateGrid\Include\UGTopHdg.h" />
+    <ClInclude Include="UltimateGrid\Include\ugvscrol.h" />
+    <ClInclude Include="UltimateGrid\Include\ugxpthemes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MarkProtection.cpp" />
+    <ClCompile Include="MarkProtectionDoc.cpp" />
+    <ClCompile Include="MarkProtectionView.cpp" />
+    <ClCompile Include="Mycug.cpp" />
+    <ClCompile Include="OptionCSV.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StockSelect.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGCBType.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGCell.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGCelTyp.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGCnrBtn.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGCTarrw.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGCTbutn.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGCtrl.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGDLType.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGDrgDrp.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGDrwHnt.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGDtaSrc.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGEdit.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGEditBase.cpp" />
+    <ClCompile Include="UltimateGrid\Source\ugformat.cpp" />
+    <ClCompile Include="UltimateGrid\Source\uggdinfo.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGGrid.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGHint.cpp" />
+    <ClCompile Include="UltimateGrid\Source\ughscrol.cpp" />
+    <ClCompile Include="UltimateGrid\Source\ugLstBox.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGMEdit.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGMemMan.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGMultiS.cpp" />
+    <ClCompile Include="UltimateGrid\Source\ugprint.cpp" />
+    <ClCompile Include="UltimateGrid\Source\ugptrlst.cpp" />
+    <ClCompile Include="UltimateGrid\Source\ugsidehd.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGStrOp.cpp" />
+    <ClCompile Include="UltimateGrid\Source\ugtab.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGTopHdg.cpp" />
+    <ClCompile Include="UltimateGrid\Source\ugvscrol.cpp" />
+    <ClCompile Include="UltimateGrid\Source\UGXPThemes.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MarkProtection.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MarkProtection.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\MarkProtection.ico" />
+    <Image Include="res\MarkProtectionDoc.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="MarkProtection.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
